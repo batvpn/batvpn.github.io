@@ -516,10 +516,10 @@ body.light-mode .video-bg:before {
 }
 
 .content-wrapper-img {
-  width: 186px;
+  width: 120px;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-top: -25px;
+  #margin-top: -25px;
   -o-object-position: center;
      object-position: center;
 }
