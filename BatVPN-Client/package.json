@@ -1,0 +1,127 @@
+{
+    "name": "batvpn/BatVPN-client",
+    "win": {
+        "version": "1.2.1",
+        "update_url": "https://storage.static.owlvpn.net/BatVPN-Client/win/update.zip",
+        "complete_update_url": "https://storage.static.owlvpn.net/BatVPN-Client/win/complete_update.zip",
+        "complete_install_url": "https://storage.static.owlvpn.net/BatVPN-Client/win/BatVPN_win.exe"
+    },
+    "mac": {
+        "version": "1.2.1",
+        "update_url": "https://storage.static.owlvpn.net/BatVPN-Client/mac/update.zip",
+        "complete_update_url": "https://storage.static.owlvpn.net/BatVPN-Client/mac/complete_update.zip",
+        "complete_install_url": "https://storage.static.owlvpn.net/BatVPN-Client/mac/BatVPN_mac.dmg"
+    },
+    "linux": {
+        "version": "1.2.1",
+        "update_url": "https://storage.static.owlvpn.net/BatVPN-Client/linux/update.zip",
+        "complete_update_url": "https://storage.static.owlvpn.net/BatVPN-Client/linux/complete_update.zip",
+        "complete_install_url": "https://storage.static.owlvpn.net/BatVPN-Client/linux/BatVPN_linux.AppImage"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/batvpn/BatVPN-client.git"
+    },
+    "notify": {
+        "toast": {
+            "state": "0",
+            "type": "warning",
+            "title": "安卓故障解决",
+            "message": "安卓客户端不能联网解决:设置页面选中 启用本地DNS，选中 启用虚拟DNS,然后刷新订阅，下载官网最新版可以设置自动刷新订阅。"
+        },
+        "modal": {
+            "state": "1",
+            "type": "warning",
+            "version": "1.2.1",
+            "title": "您需要更新客户端啦",
+            "message": "因旧版本会造成不能登录和大部分节点超时不可用，所以必须升级到1.2.1版本。如果在左侧在线升级后还是原版本，<a class='btn bg-gradient-info btn-sm my-0 me-2' href='javascript:onClickControl(\"shellOpenExternal\", \"https://bat.vpnb.net/zh/download\")'>点击下载</a>覆盖安装即可。"
+        }
+    },
+    "history": [
+        {
+            "version": "1.2.1",
+            "release_time": "2023-10-25",
+            "description": "修改Socks5端口为高段位接口，尝试修复win11提示端口冲突的bug；增加支持vmess、trojan中转的功能；增加节点协议增加时识别新协议提示功能；增加了小地图显示；增加了节点连接后在客户端小地图上标注节点所在地理位置的效果；优化了ping结果显示和逻辑，解决遗留的头像显示问题，修正一些细节显示元素，修复一些小bug。"
+        }, {
+            "version": "1.1.1",
+            "release_time": "2023-09-17",
+            "description": "修复同时运行多个程序造成端口冲突的bug；修复第一次登录会提示错误的bug；修复节点故障反馈不可用的bug；修复pac模式运行异常的bug；增加支持Shadowsocks中转的功能；增加节点连接、选择路由、数据刷新、订阅刷新的说明按钮；此次更新建议先卸载再安装。"
+        }, {
+            "version": "1.0.1",
+            "release_time": "2023-05-05",
+            "description": "优化头像显示；修复黑名单模式无法正常运行；修正网址库错误导致的部分网站打不开包括谷歌的部分网址；修复安装到Program Files等包含空格的目录不能连接的bug；更新pac名单和网址库；修复检测新版本有时失效的问题；修复未停止就退出后无法打开网页的bug；加入开机启动的功能开关。强烈建议更新"
+        }, {
+            "version": "0.1.8",
+            "release_time": "2022-12-18",
+            "description": "彻底修复延迟测试 tcping的精准度不准的问题，显示版本更新历史记录，显示站内通知公告，修复更新时可能打开多个保存窗口的bug"
+        }, {
+            "version": "0.1.7",
+            "release_time": "2022-05-08",
+            "description": "修复订阅信息字数太长的遮挡问题，改善tcping的精准度显示效果"
+        }, {
+            "version": "0.1.6",
+            "release_time": "2021-12-06",
+            "description": "修复中转后不能生效的问题，增加订阅参数，改善tcping的显示效果"
+        }, {
+            "version": "0.1.5",
+            "release_time": "2021-06-04",
+            "description": "修复win版安装到默认路径后不能启动的问题，已经更改为默认其他安装路径"
+        }, {
+            "version": "0.1.4",
+            "release_time": "2021-01-15",
+            "description": "支持即时聊天功能，随时联系在线客服，右键菜单列表优化"
+        }, {
+            "version": "0.1.3",
+            "release_time": "2020-12-21",
+            "description": "支持在线更新"
+        }, {
+            "version": "0.1.2",
+            "release_time": "2020-06-09",
+            "description": "支持多语言设置"
+        }, {
+            "version": "0.1.1",
+            "release_time": "2020-01-05",
+            "description": "支持风格随系统变化，或者设置为随时间显示白天和暗黑模式，或者单独设置白天和暗黑风格"
+        }, {
+            "version": "0.1.0",
+            "release_time": "2019-07-11",
+            "description": "支持会员Gravatar头像"
+        }, {
+            "version": "0.0.9",
+            "release_time": "2019-05-21",
+            "description": "支持用户数据刷新，订阅刷新"
+        }, {
+            "version": "0.0.8",
+            "release_time": "2018-09-28",
+            "description": "开关状态美化，修复一些列bug，美化路由状态切换显示效果"
+        }, {
+            "version": "0.0.7",
+            "release_time": "2018-03-04",
+            "description": "支持路由模式切换，电脑从睡眠模式唤醒后恢复之前的代理状态"
+        }, {
+            "version": "0.0.6",
+            "release_time": "2018-01-17",
+            "description": "支持会员登录，并同步节点数据"
+        }, {
+            "version": "0.0.5",
+            "release_time": "2017-10-18",
+            "description": "支持 系统日志 内核日志"
+        }, {
+            "version": "0.0.4",
+            "release_time": "2017-08-20",
+            "description": "支持 PAC编辑 PAC 重启"
+        }, {
+            "version": "0.0.3",
+            "release_time": "2017-02-08",
+            "description": "支持 Socks5端口 HTTP端口 PAC服务器端口等设置"
+        }, {
+            "version": "0.0.2",
+            "release_time": "2016-06-22",
+            "description": "支持订阅"
+        }, {
+            "version": "0.0.1",
+            "release_time": "2016-03-18",
+            "description": "测试版发布"
+        }
+    ]
+}
