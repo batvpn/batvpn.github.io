@@ -32,7 +32,7 @@
         "modal": {
             "state": "1",
             "type": "warning",
-            "version": "1.2.1",
+            "version": "1.2.0",
             "title": "您需要更新客户端啦",
             "message": "因旧版本会造成不能登录和大部分节点超时不可用，所以必须升级到1.2.1版本。如果在左侧在线升级后还是原版本，<a class='btn bg-gradient-info btn-sm my-0 me-2' href='javascript:onClickControl(\"shellOpenExternal\", \"https://bat.vpnb.net/zh/download\")'>点击下载</a>覆盖安装即可。"
         }
@@ -123,5 +123,13 @@
             "release_time": "2016-03-18",
             "description": "测试版发布"
         }
+    ],
+    "APIPathBackup": [
+        "https://bat.vpnb.net",
+        "https://www.batvpn.top"
+    ],
+    "chatBackup": [
+        "https://chat.owlvpn.net/assets/diy/mini/ymwl_diy_1.js",
+        "https://chat.boda10086.com/assets/diy/mini/ymwl_diy_1.js"
     ]
 }
