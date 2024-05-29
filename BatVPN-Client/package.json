@@ -1,19 +1,19 @@
 {
     "name": "batvpn/BatVPN-client",
     "win": {
-        "version": "1.2.1",
+        "version": "1.3.1",
         "update_url": "https://storage.static.owlvpn.net/BatVPN-Client/win/update.zip",
         "complete_update_url": "https://storage.static.owlvpn.net/BatVPN-Client/win/complete_update.zip",
         "complete_install_url": "https://storage.static.owlvpn.net/BatVPN-Client/win/BatVPN_win.exe"
     },
     "mac": {
-        "version": "1.2.1",
+        "version": "1.3.1",
         "update_url": "https://storage.static.owlvpn.net/BatVPN-Client/mac/update.zip",
         "complete_update_url": "https://storage.static.owlvpn.net/BatVPN-Client/mac/complete_update.zip",
         "complete_install_url": "https://storage.static.owlvpn.net/BatVPN-Client/mac/BatVPN_mac.dmg"
     },
     "linux": {
-        "version": "1.2.1",
+        "version": "1.3.1",
         "update_url": "https://storage.static.owlvpn.net/BatVPN-Client/linux/update.zip",
         "complete_update_url": "https://storage.static.owlvpn.net/BatVPN-Client/linux/complete_update.zip",
         "complete_install_url": "https://storage.static.owlvpn.net/BatVPN-Client/linux/BatVPN_linux.AppImage"
@@ -39,6 +39,10 @@
     },
     "history": [
         {
+            "version": "1.3.1",
+            "release_time": "2024-05-29",
+            "description": "精简优化pac文件，使文件结构更合理，方便添加和修改pac规则，增加修改shocks5端口会同时修改pac相关的端口，从而修复修改shocks5端口后pac用不了的bug，加入内核文件检测提醒，优化了登录账户和刷新系统信息的逻辑，修复了部分地区的登录账户网络错误的问题，添加清空缓存的功能，检测到新版本会弹窗提醒，修正一些细节显示元素，修复一些小bug。"
+        }, {
             "version": "1.2.1",
             "release_time": "2023-10-25",
             "description": "修改Socks5端口为高段位接口，尝试修复win11提示端口冲突的bug；增加支持vmess、trojan中转的功能；增加节点协议增加时识别新协议提示功能；增加了小地图显示；增加了节点连接后在客户端小地图上标注节点所在地理位置的效果；优化了ping结果显示和逻辑，解决遗留的头像显示问题，修正一些细节显示元素，修复一些小bug。"
@@ -127,10 +131,11 @@
     "APIPathBackup": [
         "https://bat.vpnb.net",
         "https://boda12306.com",
-        "https://www.batvpn.top"
+        "https://www.batvpn.top",
+        "https://account.owlvpn.net"
     ],
     "chatBackup": [
-        "https://chat.owlvpn.net/assets/diy/mini/ymwl_diy_1.js",
-        "https://chat.boda10086.com/assets/diy/mini/ymwl_diy_1.js"
+        "https://chat.boda10086.com/assets/diy/mini/ymwl_diy_1.js",
+        "https://chat.batvpn.eu.org/assets/diy/mini/ymwl_diy_1.js"
     ]
 }
