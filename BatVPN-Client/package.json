@@ -1,19 +1,19 @@
 {
     "name": "batvpn/BatVPN-client",
     "win": {
-        "version": "1.3.1",
+        "version": "1.4.1",
         "update_url": "https://storage.static.owlvpn.net/BatVPN-Client/win/update.zip",
         "complete_update_url": "https://storage.static.owlvpn.net/BatVPN-Client/win/complete_update.zip",
         "complete_install_url": "https://storage.static.owlvpn.net/BatVPN-Client/win/BatVPN_win.exe"
     },
     "mac": {
-        "version": "1.3.1",
+        "version": "1.4.1",
         "update_url": "https://storage.static.owlvpn.net/BatVPN-Client/mac/update.zip",
         "complete_update_url": "https://storage.static.owlvpn.net/BatVPN-Client/mac/complete_update.zip",
         "complete_install_url": "https://storage.static.owlvpn.net/BatVPN-Client/mac/BatVPN_mac.dmg"
     },
     "linux": {
-        "version": "1.3.1",
+        "version": "1.4.1",
         "update_url": "https://storage.static.owlvpn.net/BatVPN-Client/linux/update.zip",
         "complete_update_url": "https://storage.static.owlvpn.net/BatVPN-Client/linux/complete_update.zip",
         "complete_install_url": "https://storage.static.owlvpn.net/BatVPN-Client/linux/BatVPN_linux.AppImage"
@@ -39,6 +39,10 @@
     },
     "history": [
         {
+            "version": "1.4.1",
+            "release_time": "2024-07-01",
+            "description": "修复部分用户登录账户网络错误的问题，改进订阅的获取和显示，一键导入后自动打开窗口，增加Custom URL Scheme，识别的URL是 batvpn://install-config?url=订阅链接&name=BatVPN，增加局域网共享的功能，支持socks5和http共享，修复一些小bug。"
+        }, {
             "version": "1.3.1",
             "release_time": "2024-05-29",
             "description": "精简优化pac文件，使文件结构更合理，方便添加和修改pac规则，增加修改shocks5端口会同时修改pac相关的端口，从而修复修改shocks5端口后pac用不了的bug，加入内核文件检测提醒，优化了登录账户和刷新系统信息的逻辑，修复了部分地区的登录账户网络错误的问题，添加清空缓存的功能，检测到新版本会弹窗提醒，修正一些细节显示元素，修复一些小bug。"
@@ -136,6 +140,7 @@
     ],
     "chatBackup": [
         "https://chat.boda10086.com/assets/diy/mini/ymwl_diy_1.js",
-        "https://chat.batvpn.eu.org/assets/diy/mini/ymwl_diy_1.js"
+        "https://chat.batvpn.eu.org/assets/diy/mini/ymwl_diy_1.js",
+        "https://chat.batvpn.pp.ua/assets/diy/mini/ymwl_diy_1.js"
     ]
 }
