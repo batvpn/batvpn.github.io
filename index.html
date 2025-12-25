@@ -24,7 +24,7 @@
 
     <body translate="no" class="vsc-initialized">
         <div class="video-bg"><div class="vsc-controller"></div>
-            <video width="320" height="240" autoplay="" loop="" muted="">
+            <video id="myVideo" width="320" height="240" autoplay="" loop="" muted="">
                 <source src="./7btrrd.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
@@ -45,6 +45,7 @@
                <input type="text" placeholder="Search">
               </div-->
               <div class="header-profile">
+               <button class="content-button status-button open close" id="playPauseBtn">暂停</button>
                <div class="notification">
                 <span class="notification-number">3</span>
                 <svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell">
@@ -283,7 +284,6 @@
                      </div>
                      <span class="pop-up__subtitle" onclick="copyText('support@batvpn.com')">support@batvpn.com</span>
                      <span class="pop-up__subtitle" onclick="copyText('batvpn.com@gmail.com')">batvpn.com@gmail.com</span>
-                     <span class="pop-up__subtitle" onclick="copyText('boda12306@gmail.com')">boda12306@gmail.com</span>
                      <!--div class="checkbox-wrapper">
                       <input type="checkbox" id="check1" class="checkbox">
                       <label for="check1">Import previous settings and preferences</label>
@@ -308,7 +308,7 @@
                     </div-->
                    </div>
                   </li>
-                  <li class="adobe-product" onclick="copyText('https://twitter.com/batvpn')">
+                  <li class="adobe-product">
                    <div class="products">
                     <svg viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <title>logo-twitter</title>
@@ -324,7 +324,29 @@
                     <span class="status-circle green"></span>
                     在线</span>
                    <div class="button-wrapper">
-                    <button class="content-button status-button" onclick="window.open('https://twitter.com/batvpn')">打开</button>
+                    <button class="content-button status-button statusbutton-x">打开</button>
+                    <div class="pop-up pop-up-x">
+                     <div class="pop-up__title">在线
+                      <svg class="close" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                       <circle cx="12" cy="12" r="10"></circle>
+                       <path d="M15 9l-6 6M9 9l6 6"></path>
+                      </svg>
+                     </div>
+                     <span class="pop-up__subtitle" onclick="copyText('https://x.com/BatVPNPro')">https://x.com/BatVPNPro <button class="content-button status-button" onclick="copyText('https://x.com/BatVPNPro')">复制</button><button class="content-button status-button" onclick="window.open('https://x.com/BatVPNPro')">打开</button></span>
+                     
+                     <!--div class="checkbox-wrapper">
+                      <input type="checkbox" id="check1" class="checkbox">
+                      <label for="check1">Import previous settings and preferences</label>
+                     </div>
+                     <div class="checkbox-wrapper">
+                      <input type="checkbox" id="check2" class="checkbox">
+                      <label for="check2">Remove old versions</label>
+                     </div-->
+                     <div class="content-button-wrapper">
+                      <button class="content-button status-button open close">取消</button>
+                      <button class="content-button status-button">确定</button>
+                     </div>
+                    </div>
                     <!--div class="menu">
                      <button class="dropdown">
                       <ul>
@@ -379,16 +401,38 @@
                     </div-->
                    </div>
                   </li>
-                  <li class="adobe-product" onclick="copyText('https://t.me/batvpncom')">
+                  <li class="adobe-product">
                    <div class="products">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240"><defs><linearGradient gradientUnits="userSpaceOnUse" y2="51.9" y1="11.536" x2="28.836" x1="46.136" id="a"><stop offset="0" stop-color="#37aee2"/><stop offset="1" stop-color="#1e96c8"/></linearGradient></defs><g transform="scale(3.4682)"><circle fill="url(#a)" r="34.6" cx="34.6" cy="34.6"/><path fill="#fff" d="M14.4 34.3l23.3-9.6c2.3-1 10.1-4.2 10.1-4.2s3.6-1.4 3.3 2c-.1 1.4-.9 6.3-1.7 11.6l-2.5 15.7s-.2 2.3-1.9 2.7c-1.7.4-4.5-1.4-5-1.8-.4-.3-7.5-4.8-10.1-7-.7-.6-1.5-1.8.1-3.2 3.6-3.3 7.9-7.4 10.5-10 1.2-1.2 2.4-4-2.6-.6l-14.1 9.5s-1.6 1-4.6.1c-3-.9-6.5-2.1-6.5-2.1s-2.4-1.5 1.7-3.1z"/></g></svg>
-                    telegram(客服电报)
+                    telegram(电报)
                    </div>
                    <span class="status">
                     <span class="status-circle green"></span>
                     在线</span>
                    <div class="button-wrapper">
-                    <button class="content-button status-button" onclick="window.open('https://t.me/batvpncom')">打开</button>
+                    <button class="content-button status-button statusbutton-telegram">打开</button>
+                    <div class="pop-up pop-up-telegram">
+                     <div class="pop-up__title">在线
+                      <svg class="close" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                       <circle cx="12" cy="12" r="10"></circle>
+                       <path d="M15 9l-6 6M9 9l6 6"></path>
+                      </svg>
+                     </div>
+                     <span class="pop-up__subtitle" onclick="copyText('https://t.me/batvpncom')">客服：https://t.me/batvpncom <button class="content-button status-button" onclick="copyText('https://t.me/batvpncom')">复制</button><button class="content-button status-button" onclick="window.open('https://t.me/batvpncom')">打开</button></span>
+                     <span class="pop-up__subtitle" onclick="copyText('https://t.me/bat_vpn')">群组：https://t.me/bat_vpn <button class="content-button status-button" onclick="copyText('https://t.me/bat_vpn')">复制</button><button class="content-button status-button" onclick="window.open('https://t.me/bat_vpn')">打开</button></span>
+                     <!--div class="checkbox-wrapper">
+                      <input type="checkbox" id="check1" class="checkbox">
+                      <label for="check1">Import previous settings and preferences</label>
+                     </div>
+                     <div class="checkbox-wrapper">
+                      <input type="checkbox" id="check2" class="checkbox">
+                      <label for="check2">Remove old versions</label>
+                     </div-->
+                     <div class="content-button-wrapper">
+                      <button class="content-button status-button open close">取消</button>
+                      <button class="content-button status-button">确定</button>
+                     </div>
+                    </div>
                     <!--div class="menu">
                      <button class="dropdown">
                       <ul>
@@ -401,15 +445,42 @@
                    </div>
                   </li>
                   <li class="adobe-product">
-                   <div class="products" onclick="copyText('https://t.me/bat_vpn')">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240"><defs><linearGradient gradientUnits="userSpaceOnUse" y2="51.9" y1="11.536" x2="28.836" x1="46.136" id="a"><stop offset="0" stop-color="#37aee2"/><stop offset="1" stop-color="#1e96c8"/></linearGradient></defs><g transform="scale(3.4682)"><circle fill="url(#a)" r="34.6" cx="34.6" cy="34.6"/><path fill="#fff" d="M14.4 34.3l23.3-9.6c2.3-1 10.1-4.2 10.1-4.2s3.6-1.4 3.3 2c-.1 1.4-.9 6.3-1.7 11.6l-2.5 15.7s-.2 2.3-1.9 2.7c-1.7.4-4.5-1.4-5-1.8-.4-.3-7.5-4.8-10.1-7-.7-.6-1.5-1.8.1-3.2 3.6-3.3 7.9-7.4 10.5-10 1.2-1.2 2.4-4-2.6-.6l-14.1 9.5s-1.6 1-4.6.1c-3-.9-6.5-2.1-6.5-2.1s-2.4-1.5 1.7-3.1z"/></g></svg>
-                    telegram(电报群)
+                   <div class="products">
+                    <svg viewBox="0 -28.5 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+                        <g>
+                            <path d="M216.856339,16.5966031 C200.285002,8.84328665 182.566144,3.2084988 164.041564,0 C161.766523,4.11318106 159.108624,9.64549908 157.276099,14.0464379 C137.583995,11.0849896 118.072967,11.0849896 98.7430163,14.0464379 C96.9108417,9.64549908 94.1925838,4.11318106 91.8971895,0 C73.3526068,3.2084988 55.6133949,8.86399117 39.0420583,16.6376612 C5.61752293,67.146514 -3.4433191,116.400813 1.08711069,164.955721 C23.2560196,181.510915 44.7403634,191.567697 65.8621325,198.148576 C71.0772151,190.971126 75.7283628,183.341335 79.7352139,175.300261 C72.104019,172.400575 64.7949724,168.822202 57.8887866,164.667963 C59.7209612,163.310589 61.5131304,161.891452 63.2445898,160.431257 C105.36741,180.133187 151.134928,180.133187 192.754523,160.431257 C194.506336,161.891452 196.298154,163.310589 198.110326,164.667963 C191.183787,168.842556 183.854737,172.420929 176.223542,175.320965 C180.230393,183.341335 184.861538,190.991831 190.096624,198.16893 C211.238746,191.588051 232.743023,181.531619 254.911949,164.955721 C260.227747,108.668201 245.831087,59.8662432 216.856339,16.5966031 Z M85.4738752,135.09489 C72.8290281,135.09489 62.4592217,123.290155 62.4592217,108.914901 C62.4592217,94.5396472 72.607595,82.7145587 85.4738752,82.7145587 C98.3405064,82.7145587 108.709962,94.5189427 108.488529,108.914901 C108.508531,123.290155 98.3405064,135.09489 85.4738752,135.09489 Z M170.525237,135.09489 C157.88039,135.09489 147.510584,123.290155 147.510584,108.914901 C147.510584,94.5396472 157.658606,82.7145587 170.525237,82.7145587 C183.391518,82.7145587 193.761324,94.5189427 193.539891,108.914901 C193.539891,123.290155 183.391518,135.09489 170.525237,135.09489 Z" fill="#5865F2" fill-rule="nonzero">
+                    </path>
+                        </g>
+                    </svg>
+                    discord
                    </div>
                    <span class="status">
                     <span class="status-circle green"></span>
                     在线</span>
                    <div class="button-wrapper">
-                    <button class="content-button status-button" onclick="window.open('https://t.me/bat_vpn')">打开</button>
+                    <button class="content-button status-button statusbutton-discord">打开</button>
+                    <div class="pop-up pop-up-discord">
+                     <div class="pop-up__title">在线
+                      <svg class="close" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                       <circle cx="12" cy="12" r="10"></circle>
+                       <path d="M15 9l-6 6M9 9l6 6"></path>
+                      </svg>
+                     </div>
+                     <span class="pop-up__subtitle" onclick="copyText('@batvpncom')">客服：@batvpncom <button class="content-button status-button" onclick="copyText('@batvpncom')">复制</button></span>
+                     <span class="pop-up__subtitle" onclick="copyText('https://discord.gg/qv6n4BgpuY')">群组：BatVPN <button class="content-button status-button" onclick="copyText('https://discord.gg/qv6n4BgpuY')">复制</button><button class="content-button status-button" onclick="window.open('https://discord.gg/qv6n4BgpuY')">打开</button></span>
+                     <!--div class="checkbox-wrapper">
+                      <input type="checkbox" id="check1" class="checkbox">
+                      <label for="check1">Import previous settings and preferences</label>
+                     </div>
+                     <div class="checkbox-wrapper">
+                      <input type="checkbox" id="check2" class="checkbox">
+                      <label for="check2">Remove old versions</label>
+                     </div-->
+                     <div class="content-button-wrapper">
+                      <button class="content-button status-button open close">取消</button>
+                      <button class="content-button status-button">确定</button>
+                     </div>
+                    </div>
                     <!--div class="menu">
                      <button class="dropdown">
                       <ul>
@@ -607,7 +678,15 @@
             }
           });
         });
-
+        if (getQueryVariable('x') != '') {
+            $(".pop-up-x").addClass("visible");
+        }
+        if (getQueryVariable('telegram') != '') {
+            $(".pop-up-telegram").addClass("visible");
+        }
+        if (getQueryVariable('discord') != '') {
+            $(".pop-up-discord").addClass("visible");
+        }
         $(function () {
           $(".statusbutton1:not(.open)").on("click", function (e) {
             $(".overlay-app").addClass("is-active");
@@ -618,6 +697,15 @@
         });
         $(".statusbutton1:not(.open)").click(function () {
           $(".pop-up1").addClass("visible");
+        });
+        $(".statusbutton-x:not(.open)").click(function () {
+          $(".pop-up-x").addClass("visible");
+        });
+        $(".statusbutton-telegram:not(.open)").click(function () {
+          $(".pop-up-telegram").addClass("visible");
+        });
+        $(".statusbutton-discord:not(.open)").click(function () {
+          $(".pop-up-discord").addClass("visible");
         });
         $(function () {
           $(".statusbutton2:not(.open)").on("click", function (e) {
@@ -652,6 +740,30 @@
           $(".pop-up").removeClass("visible");
           $(".copy").addClass("visible");
         }
+        //js读取url参数
+        function getQueryVariable(variable) {
+            var query = window.location.search.substring(1);
+            var vars = query.split("&");
+            for (var i = 0; i < vars.length; i++) {
+                var pair = vars[i].split("=");
+                if (pair[0] == variable) {
+                    return pair[1];
+                }
+            }
+            return "";
+        }
+        const video = document.getElementById('myVideo');
+        const btn = document.getElementById('playPauseBtn');
+
+        btn.addEventListener('click', function () {
+            if (video.paused) {
+                video.play();
+                btn.innerText = '暂停';
+            } else {
+                video.pause();
+                btn.innerText = '播放';
+            }
+        });
     </script>
     <script type="text/javascript">
         var email = '';

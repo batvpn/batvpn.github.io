@@ -276,6 +276,7 @@ body.light-mode .video-bg:before {
 
 .notification {
   position: relative;
+  margin-left: 22px;
 }
 .notification-number {
   position: absolute;
