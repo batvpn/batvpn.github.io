@@ -1,19 +1,19 @@
 {
     "name": "batvpn/BatVPN-client",
     "win": {
-        "version": "1.5.1",
+        "version": "1.6.1",
         "update_url": "https://storage.static.owlvpn.net/BatVPN-Client/win/update.zip",
         "complete_update_url": "https://storage.static.owlvpn.net/BatVPN-Client/win/complete_update.zip",
         "complete_install_url": "https://storage.static.owlvpn.net/BatVPN-Client/win/BatVPN_win.exe"
     },
     "mac": {
-        "version": "1.5.1",
+        "version": "1.6.1",
         "update_url": "https://storage.static.owlvpn.net/BatVPN-Client/mac/update.zip",
         "complete_update_url": "https://storage.static.owlvpn.net/BatVPN-Client/mac/complete_update.zip",
         "complete_install_url": "https://storage.static.owlvpn.net/BatVPN-Client/mac/BatVPN_mac.dmg"
     },
     "linux": {
-        "version": "1.5.1",
+        "version": "1.6.1",
         "update_url": "https://storage.static.owlvpn.net/BatVPN-Client/linux/update.zip",
         "complete_update_url": "https://storage.static.owlvpn.net/BatVPN-Client/linux/complete_update.zip",
         "complete_install_url": "https://storage.static.owlvpn.net/BatVPN-Client/linux/BatVPN_linux.AppImage"
@@ -39,9 +39,13 @@
     },
     "history": [
         {
+            "version": "1.6.1",
+            "release_time": "2026-06-10",
+            "description": "增加 reality 协议，增加 tun 模式，增加测试延迟模式，分为tcp ping 和真连接模式。增加负载均衡和故障转移选项，增加不代理站点的选项，修复一些bug。"
+        }, {
             "version": "1.5.1",
-            "release_time": "2025-02-12",
-            "description": "调整部分部件图标，调整头像显示，调整通知处显示，调整节点显示的几处风格，加入自动测试延迟的开关，更新内核、规则、pac文件，修复订阅和数据刷新遇到的错误，修复密码有特殊符号会登录不成功的bug，修复订阅部分的修改部分的bug，更多的几处内部和前端的细节处理。"
+            "release_time": "2026-02-12",
+            "description": "调整部分部件图标，调整头像显示，调整通知处显示，调整节点显示的几处风格，加入自动测试延迟的开关，更新内核、规则、pac文件，修复订阅和数据刷新遇到的错误，修复密码有特殊符号会登录不成功的bug，修复订阅部分bug，更多的几处内部和前端的细节处理。"
         }, {
             "version": "1.4.1",
             "release_time": "2024-07-01",
