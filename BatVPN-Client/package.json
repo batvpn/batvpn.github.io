@@ -1,25 +1,25 @@
 {
     "name": "batvpn/BatVPN-client",
     "win": {
-        "version": "1.7.1",
+        "version": "1.8.1",
         "update_url": "https://storage.static.owlvpn.net/BatVPN-Client/win/update.zip",
         "complete_update_url": "https://storage.static.owlvpn.net/BatVPN-Client/win/complete_update.zip",
         "complete_install_url": "https://storage.static.owlvpn.net/BatVPN-Client/win/BatVPN_win.exe"
     },
     "mac": {
-        "version": "1.7.1",
+        "version": "1.8.1",
         "update_url": "https://storage.static.owlvpn.net/BatVPN-Client/mac/update.zip",
         "complete_update_url": "https://storage.static.owlvpn.net/BatVPN-Client/mac/complete_update.zip",
         "complete_install_url": "https://storage.static.owlvpn.net/BatVPN-Client/mac/BatVPN_mac.dmg"
     },
     "mac_x64": {
-        "version": "1.7.1",
+        "version": "1.8.1",
         "update_url": "https://storage.static.owlvpn.net/BatVPN-Client/mac/update.zip",
         "complete_update_url": "https://storage.static.owlvpn.net/BatVPN-Client/mac/complete_update.zip",
         "complete_install_url": "https://storage.static.owlvpn.net/BatVPN-Client/mac/BatVPN_mac_x64.dmg"
     },
     "linux": {
-        "version": "1.7.1",
+        "version": "1.8.1",
         "update_url": "https://storage.static.owlvpn.net/BatVPN-Client/linux/update.zip",
         "complete_update_url": "https://storage.static.owlvpn.net/BatVPN-Client/linux/complete_update.zip",
         "complete_install_url": "https://storage.static.owlvpn.net/BatVPN-Client/linux/BatVPN_linux.AppImage"
@@ -45,9 +45,9 @@
     },
     "history": [
         {
-            "version": "1.7.1",
+            "version": "1.8.1",
             "release_time": "2026-07-14",
-            "description": "优化内部节点和api的dns的逻辑，防止dns污染，节点连接时客户端的所有请求都经过节点，比如检查更新和客服聊天接口，增加官网一键导入全部节点，增加导入订阅文件，TUN 模式时改为服务模式，增加一键初始化客户端，增加mac ARM 架构版本，修复一些bug。"
+            "description": "优化内部节点和api的dns的逻辑，防止dns污染，节点连接时客户端的所有请求都经过节点，比如检查更新和客服聊天接口，增加官网一键导入全部节点，增加导入订阅文件，TUN 模式时改为服务模式，TUN模式下避免DNS泄露，增加一键初始化客户端，增加mac ARM 架构版本，更新xray内核，修复一些bug。"
         }, {
             "version": "1.6.1",
             "release_time": "2026-06-10",
